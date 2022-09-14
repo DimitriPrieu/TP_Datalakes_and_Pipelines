@@ -9,4 +9,5 @@ object ConfService {
   val GROUP_ID = "my-group"
   val TOPIC_OUT = "mytopic"
 
+
 }
