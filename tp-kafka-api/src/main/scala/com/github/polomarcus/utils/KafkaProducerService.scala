@@ -29,6 +29,7 @@ object KafkaProducerService {
       """)
     } catch {
       case e:Exception => logger.error(e.toString)
+
     }
   }
 
