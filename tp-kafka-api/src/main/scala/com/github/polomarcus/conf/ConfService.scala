@@ -8,6 +8,4 @@ object ConfService {
   val TOPIC_KAFKA_STREAMS = "my_kafka_streams_topic"
   val GROUP_ID = "my-group"
   val TOPIC_OUT = "mytopic"
-
-
 }
