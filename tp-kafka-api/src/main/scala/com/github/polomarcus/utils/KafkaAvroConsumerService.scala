@@ -1,8 +1,12 @@
 package com.github.polomarcus.utils
 
 import com.github.polomarcus.conf.ConfService
+<<<<<<< HEAD
 import com.github.polomarcus.models.News
 import com.sksamuel.avro4s.{Record, RecordFormat}
+=======
+import com.sksamuel.avro4s.Record
+>>>>>>> a165f57 (kafka streams examples)
 import com.typesafe.scalalogging.Logger
 import io.confluent.kafka.serializers.AbstractKafkaSchemaSerDeConfig
 import org.apache.kafka.clients.consumer.{ConsumerConfig, KafkaConsumer}
@@ -56,6 +60,7 @@ object KafkaAvroConsumerService {
 
             //@TODO how can we parse the raw data to a News object? @see producer for hints
             val deserializedValue = RecordFormat[News].from(record.value())
+
             logger.info(
               s"""Consumed :
                  |Offset : ${record.offset()} from partition ${record.partition()}
