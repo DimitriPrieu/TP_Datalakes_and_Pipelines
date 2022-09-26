@@ -54,7 +54,6 @@ object KafkaAvroConsumerService {
           messages.forEach(record => {
 
             //@TODO how can we parse the raw data to a News object? @see producer for hints
-
             val deserializedValue = RecordFormat[News].from(record.value())
             logger.info(
               s"""Consumed :
