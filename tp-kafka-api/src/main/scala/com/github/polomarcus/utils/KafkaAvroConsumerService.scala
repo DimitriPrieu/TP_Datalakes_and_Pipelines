@@ -1,7 +1,8 @@
 package com.github.polomarcus.utils
 
 import com.github.polomarcus.conf.ConfService
-import com.sksamuel.avro4s.Record
+import com.github.polomarcus.models.News
+import com.sksamuel.avro4s.{Record, RecordFormat}
 import com.typesafe.scalalogging.Logger
 import io.confluent.kafka.serializers.AbstractKafkaSchemaSerDeConfig
 import org.apache.kafka.clients.consumer.{ConsumerConfig, KafkaConsumer}
